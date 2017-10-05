@@ -16,7 +16,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'view_kurs'
+    'view_kurs',
+    'clicker',
 ]
 
 MIDDLEWARE = [

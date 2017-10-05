@@ -13,4 +13,8 @@ def showClicks(request):
     clicker.clicks += 1
     clicker.save()
 
-    return HttpResponse('Clicks %r' % clicker.clicks)
+    context = {
+        'clicks': clicker.clicks
+    }
+
+    return render(request, 'clicker/clicks.html', context)

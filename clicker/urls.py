@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
-from clicker.views import helloWord
+from clicker.views import showClicks
 
 urlpatterns = [
-    url(r'', helloWord),
+    url(r'', showClicks),
 ]

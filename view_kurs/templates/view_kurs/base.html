@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="{% static "view_kurs/css/semantic.min.css" %}">
+    <script src="{% static "view_kurs/js/jquery.min.js" %}"></script>
+    <script src="{% static "view_kurs/js/semantic.min.js" %}"></script>
+    {% block head %}
+    {% endblock head %}
+</head>
+
+<body>
+
+    {% block content %}
+    {% endblock content %}
+
+</body>
+
+</html>

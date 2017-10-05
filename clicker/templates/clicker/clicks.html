@@ -1,18 +1,8 @@
-{% load staticfiles %}
+{% extends 'view_kurs/base.html' %}
 
-<html>
-
-<head>
-    <link rel="stylesheet" href="{% static "view_kurs/css/semantic.min.css" %}">
-    <script src="{% static "view_kurs/js/jquery.min.js" %}"></script>
-    <script src="{% static "view_kurs/js/semantic.min.js" %}"></script>
-</head>
-
-<body>
+{% block content %}
 
     <p>Clicks {{ clicks }}</p>
     <a class="ui blue button" href="">Click</a>
 
-</body>
-
-</html>
+{% endblock content %}

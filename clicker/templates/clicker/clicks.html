@@ -1,10 +1,17 @@
+{% load staticfiles %}
+
 <html>
 
-<head></head>
+<head>
+    <link rel="stylesheet" href="{% static "view_kurs/css/semantic.min.css" %}">
+    <script src="{% static "view_kurs/js/jquery.min.js" %}"></script>
+    <script src="{% static "view_kurs/js/semantic.min.js" %}"></script>
+</head>
 
 <body>
 
     <p>Clicks {{ clicks }}</p>
+    <a class="ui blue button" href="">Click</a>
 
 </body>
 

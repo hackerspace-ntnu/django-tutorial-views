@@ -1,8 +1,15 @@
 {% extends 'view_kurs/base.html' %}
 
 {% block content %}
-
-    <p>Clicks {{ clickers.0.clicks }}</p>
-    <a class="ui blue button" href="increase/1">Click</a>
-
+    <br>
+    <h1>Check out these awesome clickers!!!1!1!!!111!1!!!</h1>
+    <hr><br><br>
+    {% for clicker in clickers %}
+        <div>
+            <h3>{{ clicker.name }}</h3>
+            <p>Clicks {{ clicker.clicks }}</p>
+            <a class="ui blue button" href="increase/{{ clicker.name }}">Click</a>
+        </div>
+        <br><br><hr><br><br>
+    {% endfor %}
 {% endblock content %}

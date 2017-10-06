@@ -3,12 +3,14 @@ from django.shortcuts import render
 
 from clicker.models import Clicker
 
-def increaseClicks(request, clicker_id):
-    clicker_id = int(clicker_id)
-    if Clicker.objects.filter(pk=clicker_id).exists():
-        clicker = Clicker.objects.get(pk=clicker_id)
-        clicker.clicks += 1
-        clicker.save()
+def increaseClicks(request, clicker_name):
+    if Clicker.objects.filter(name=clicker_name).exists():
+        clicker = Clicker.objects.get(name=clicker_name)
+    else:
+        clicker = Clicker.objects.create(name=clicker_name)
+
+    clicker.clicks += 1
+    clicker.save()
 
     return HttpResponseRedirect('/')
 

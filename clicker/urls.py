@@ -4,5 +4,5 @@ from clicker.views import showClicks, increaseClicks
 
 urlpatterns = [
     url(r'^$', showClicks),
-    url(r'^increase/(?P<clicker_id>[0-9]*)$', increaseClicks),
+    url(r'^increase/(?P<clicker_name>.*)$', increaseClicks),
 ]

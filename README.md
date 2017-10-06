@@ -22,5 +22,7 @@ commit changes before starting a new task
 
 ### Task 4
 * Add a 'name' attribute to the clicker model
+* Use the 'name' attribute instead of the id in url config and views
+* If there is no clicker with the requested name, create it
 * Create three to five clickers
 * Show all clickers on the same page
